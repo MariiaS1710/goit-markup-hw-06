@@ -801,6 +801,7 @@ border: 1px solid var(--accent-color);
 }
 .label-checkbox{
     display: flex;
+    align-items: center;
     border: none;
     font-family: 'Roboto';
     font-weight: 400;
@@ -824,15 +825,18 @@ border: 1px solid var(--accent-color);
 
 .square{
     display: flex;
+    align-items: center;
     width: 16px;
     height: 15px;
     border: 2px solid var(--primary-text-color);
     border-radius: 2px;
     margin-right: 9px;
 }
-.form-checkbox input:checked + .square{
+.input-checkbox:checked +.label-checkbox .square{
     background-color: var(--accent-color);
     border: 2px solid var(--accent-color);
+    display: flex;
+    justify-content: center;
 }
 
 .modal-form .btn{

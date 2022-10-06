@@ -397,12 +397,17 @@
           placeholder="Введіть текст"></textarea>
       </li>
       <div class="form-checkbox">
-        <div class="square"></div>
-        <label for="accept" class="label-checkbox">
+        <input id="accept" class="input-checkbox visually-hidden" type="checkbox" name="accept"
+          value="Погоджуюся з розсилкою та приймаю" />
+        <label for="accept" class="label-checkbox"><div class="square">
+          <svg class="person" width="18" height="18">
+            <use href="./img/sprite.svg#icon-tick"></use>
+          </svg>
+        </div>
         Погоджуюся з розсилкою та приймаю<span><a href="" class="link-checkbox">Умови договору</a></span>
       </label>
-      <input id="accept" class="input-checkbox visually-hidden" type="checkbox" name="accept"
-        value="Погоджуюся з розсилкою та приймаю" />
+      
+      
       </div>
       </ul>
       <button type="submit" class="btn">Відправити</button>
