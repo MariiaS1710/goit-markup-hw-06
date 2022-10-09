@@ -842,6 +842,7 @@ border: 1px solid var(--accent-color);
     align-items: center;
     margin-top: 20px;
     margin-bottom: 40px;
+    flex-direction: row-reverse;
 }
 .label-checkbox{
     display: flex;
@@ -876,12 +877,13 @@ border: 1px solid var(--accent-color);
     border-radius: 2px;
     margin-right: 9px;
 }
-.input-checkbox:checked +.label-checkbox .square{
+.input-checkbox:checked +.square {
     background-color: var(--accent-color);
     border: 2px solid var(--accent-color);
     display: flex;
     justify-content: center;
 }
+
 
 .btn{
     display: block;
