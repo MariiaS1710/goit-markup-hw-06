@@ -40,12 +40,8 @@ ul{
 .header-container{
     display: flex;
     align-items: center;
-    position: relative;
-}
-.header{
-    padding-bottom: 25px;
-    padding-top: 24px;
-    border-bottom: 1px rgba(236, 236, 236, 1);
+    padding: 24px 15px 25px;
+    border-bottom:1px solid #ECECEC;;
 }
 .link{
     color: var(--primary-text-color);
@@ -528,7 +524,7 @@ background-color: var(--accent-color);
     height: 20px;
 }
 .footer-form{
-    margin-left: 93px;
+    margin-left: auto;
     width: 570px;
     height: 86px;
 }
@@ -558,30 +554,24 @@ background-color: var(--accent-color);
     color: rgba(255, 255, 255, 0.6);
 }
 .form-wrap button{
-    position: relative;
     width: 200px;
     height: 50px;
 }
 .form-wrap .icon-form{   
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     fill: var(--primary-white-color);
     width: 24px;
     height: 24px;
     margin-left: 10px;
 }
+.form-wrap .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* Portfolio */
 /* header */
-.header.portf{
-    position: absolute;
-    left:50%;
-    transform: translate(-50%);
-    border-bottom:1px solid #ECECEC;
-    width: 1600px;
-}
 .link.current-port{
     color: var(--accent-color);
     position: relative;
@@ -755,11 +745,23 @@ background-color: var(--accent-color);
     right: 0;
     width: 30px;
     height: 30px;
-    background-image: url(../img/close.svg);
     border: none;
     background-color: var(--primary-white-color);
     margin-top: 8px;
     margin-right: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cros{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--black-color);
+}
+.close:hover .cros{
+    fill: var(--accent-color);
 }
 .modal-title{
 text-align: center;
@@ -776,7 +778,7 @@ margin-bottom: 12px;
     flex-direction: column;
 }
 .form-list-item:not(:first-child){
-    padding-top: 10px;
+    margin-top: 10px;
 }
 .form-list-item input{
     height: 40px;
@@ -812,7 +814,7 @@ margin-bottom: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--secondary-text-color);
-    padding-bottom: 4px;
+    margin-bottom: 4px;
 }
 
 .form-coment{
@@ -841,7 +843,7 @@ border: 1px solid var(--accent-color);
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     flex-direction: row-reverse;
 }
 .label-checkbox{
